@@ -1,8 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { ProductRoutingModule } from './product-routing.module';
 import { ProductComponent } from './product/product.component';
+import { AppMaterialModule } from '../shared/app-material/app-material.module';
+
 
 
 @NgModule({
@@ -11,7 +13,8 @@ import { ProductComponent } from './product/product.component';
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule
+    ProductRoutingModule,
+    AppMaterialModule
   ]
 })
 export class ProductModule { }
